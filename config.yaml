@@ -16,6 +16,7 @@ data:
         rate_limit:
           unit: minute
           requests_per_unit: 100
+
 EOF
 
 
@@ -99,7 +100,7 @@ spec:
         app: ratelimit
     spec:
       containers:
-      - image: envoyproxy/ratelimit:330a681f # 2021/11/06
+      - image: envoyproxy/ratelimit:6f5de117 # 2021/01/08
         imagePullPolicy: Always
         name: ratelimit
         command: ["/bin/ratelimit"]
@@ -136,7 +137,6 @@ EOF
 
 #############################################################
 
-
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
@@ -165,7 +165,7 @@ spec:
         value:
           name: envoy.filters.http.ratelimit
           typed_config:
-            "@type": 
+            "@type": type.googleapis.com/envoy.extensions.filters.http.ratelimit.v3.RateLimit
             # domain can be anything! Match it to the ratelimter service config
             domain: productpage-ratelimit
             failure_mode_deny: true
@@ -199,8 +199,8 @@ spec:
                       port_value: 8081
 EOF
 
-
 ################################################################################
+
 
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1alpha3
@@ -231,3 +231,17 @@ spec:
                   header_name: ":path"
                   descriptor_key: "PATH"
 EOF
+
+
+
+kubectl delete deployment ratelimit
+kubectl delete deployment redis
+kubectl delete envoyfilter filter-local-ratelimit-svc -n istio-system
+kubectl delete envoyfilter filter-ratelimit -n istio-system
+kubectl delete envoyfilter filter-ratelimit-svc -n istio-system
+kubectl delete svc redis
+kubectl delete svc ratelimit
+
+
+# add configuracao local
+# versoes istio 1.11.4 / kubectl 1.22
