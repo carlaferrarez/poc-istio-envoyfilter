@@ -6,3 +6,31 @@ https://istio.io/latest/docs/setup/getting-started/
 
 
 https://github.com/istio/istio/issues/31090
+
+
+
+          rate_limits:
+            - actions: # any actions in here
+                # Multiple actions nest the descriptors
+                # https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/rate_limit_filter#config-http-filters-rate-limit-composing-actions
+                # - generic_key:
+                    # descriptor_value: "test"
+                - request_headers:
+                    header_name: "Authorization"
+                    descriptor_key: "auth"
+                # - remote_address: {}
+                # - destination_cluster: {}
+				
+				
+				
+				
+	domain: test
+descriptors:
+   # match the descriptor_key from the EnvoyFilter
+  - key: auth
+    # Do not include a value unless you know what auth value you want to rate limit (i.e a specific API_KEY)
+    rate_limit: # describe the rate limit 
+      unit: minute
+      requests_per_unit: 60
+	  
+https://github.com/istio/istio/issues/22068
