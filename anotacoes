@@ -34,3 +34,6 @@ descriptors:
       requests_per_unit: 60
 	  
 https://github.com/istio/istio/issues/22068
+
+https://github.com/envoyproxy/envoy/issues/10124
+
