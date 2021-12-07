@@ -7,12 +7,12 @@ data:
   config.yaml: |
     domain: productpage-ratelimit
     descriptors:
-      - key: PATH
-        value: "/productpage"
+      - key: HEADER
+        value: "teste"
         rate_limit:
           unit: minute
-          requests_per_unit: 1
-      - key: PATH
+          requests_per_unit: 5
+      - key: HEADER
         rate_limit:
           unit: minute
           requests_per_unit: 100
@@ -228,8 +228,8 @@ spec:
           rate_limits:
             - actions: # any actions in here
               - request_headers:
-                  header_name: ":path"
-                  descriptor_key: "PATH"
+                  header_name: "teste"
+                  descriptor_key: "HEADER"
 EOF
 
 
