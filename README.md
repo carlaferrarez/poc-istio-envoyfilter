@@ -8,11 +8,18 @@ Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
-Ter um cluster rodando na máquina. Nesse tutorial foi utilizado a versão 1.22 do Kubernetes com o minikube. [Tutorial Minikube](https://minikube.sigs.k8s.io/docs/start/)
+* Cluster com Kubernetes rodando na máquina. Nesse tutorial foi utilizado a versão 1.22 do Kubernetes com o minikube. [Tutorial Minikube](https://minikube.sigs.k8s.io/docs/start/)
 ```
 minikube start 
 ```
-![Test Image 1](images/minikube.png)
+<img src="images/minikube.png" width=60% height=60%>
+
+
+* Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio] (https://istio.io/latest/docs/setup/getting-started/)
+```
+istioctl version
+```
+<img src="images/istio.png" width=60% height=60%>
 
 ### 🔧 Instalação
 
