@@ -30,10 +30,10 @@ Diga como essa etapa será:
 ```
 Dar exemplos
 ```
-Observação: ao alterar o ConfigMap, o serviço do ratelimit deve ser reiniciado. É uma limitação da feature. Existe uma solução paralela que pode ser utilizada, mas ainda não foi testada: 
+# Observação: ao alterar o ConfigMap, o serviço do ratelimit deve ser reiniciado. É uma limitação da feature. Existe uma solução paralela que pode ser utilizada, mas ainda não foi testada
 
 ```
-
+https://kubectl.docs.kubernetes.io/guides/config_management/secrets_configmaps/
 ```
 
 
