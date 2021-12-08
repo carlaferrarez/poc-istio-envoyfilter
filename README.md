@@ -6,6 +6,8 @@ A experimentação foi feita utilizando o sistema operacional Linux. O objetivo 
 
 <img src="images/nativexmesh.png" width=60% height=60%>
 
+[Referência](https://www.tetrate.io/blog/why-do-you-need-istio-when-you-already-have-kubernetes/)
+
 ### 📋 Pré-requisitos
 
 * Cluster com Kubernetes rodando na máquina. Nesse tutorial foi utilizado a versão 1.22 do Kubernetes com o minikube. [Tutorial Minikube](https://minikube.sigs.k8s.io/docs/start/)
