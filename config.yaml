@@ -8,14 +8,14 @@ data:
     domain: productpage-ratelimit
     descriptors:
       - key: HEADER
-        value: "teste"
+        value: "0d805df0-6e18-4916-84ab-7446a1ca401b"
         rate_limit:
-          unit: minute
-          requests_per_unit: 5
+          unit: second
+          requests_per_unit: 2
       - key: HEADER
         rate_limit:
-          unit: minute
-          requests_per_unit: 100
+          unit: second
+          requests_per_unit: 5
 
 EOF
 
@@ -83,6 +83,7 @@ spec:
   selector:
     app: ratelimit
 ---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -228,7 +229,7 @@ spec:
           rate_limits:
             - actions: # any actions in here
               - request_headers:
-                  header_name: "teste"
+                  header_name: "api-key"
                   descriptor_key: "HEADER"
 EOF
 
