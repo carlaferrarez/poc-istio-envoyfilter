@@ -30,14 +30,12 @@ Diga como essa etapa será:
 ```
 Dar exemplos
 ```
-
-E repita:
+Observação: ao alterar o ConfigMap, o serviço do ratelimit deve ser reiniciado. É uma limitação da feature. Existe uma solução paralela que pode ser utilizada, mas ainda não foi testada: 
 
 ```
-Até finalizar
+
 ```
 
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
