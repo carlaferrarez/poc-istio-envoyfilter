@@ -2,7 +2,9 @@
 
 ## 🚀 Começando
 
-A experimentação foi feita utilizando o sistema operacional Linux. O objetivo é utilizar o EnvoyFilter do Istio para habilitar a feature de limitação de tráfego. O Envoy suporta 2 tipos de limitação: local e global. As limitações locais são usadas para limitar as requisições por serviço (in-mesh traffic). Já a limitação global é utilizada para limitação pelo ingress gateway. Nessa POC será utilizada apenas a global, mas as duas poderiam ser utilizadas juntas. 
+A experimentação foi feita utilizando o sistema operacional Linux. O objetivo é utilizar o EnvoyFilter (sidecar proxy) do Istio para habilitar a feature de limitação de tráfego. O Envoy suporta 2 tipos de limitação: local e global. As limitações locais são usadas para limitar as requisições por serviço (in-mesh traffic). Já a limitação global é utilizada para limitação pelo ingress gateway. Nessa POC será utilizada apenas a global, mas as duas poderiam ser utilizadas juntas. 
+
+<img src="images/nativexmesh.png" width=60% height=60%>
 
 ### 📋 Pré-requisitos
 
