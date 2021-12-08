@@ -15,7 +15,7 @@ minikube start
 <img src="images/minikube.png" width=60% height=60%>
 
 
-* Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio] (https://istio.io/latest/docs/setup/getting-started/)
+* Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio](https://istio.io/latest/docs/setup/getting-started/)
 ```
 istioctl version
 ```
