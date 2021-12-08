@@ -37,7 +37,7 @@ kubectl get pods
 
 ### 🔧 Desenvolvimento
 
-COLOCAR IMAGEM ENVOY
+<img src="https://user-images.githubusercontent.com/36728177/145292617-e713cbdd-10ef-4022-8c9f-19a7722dba03.png" width=60% height=60%>
 
 Executando os scripts para criação da infraestrutura:
 
