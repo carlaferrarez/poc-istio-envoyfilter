@@ -6,7 +6,12 @@ A experimentação foi feita utilizando o sistema operacional Linux. O objetivo 
 
 <img src="images/nativexmesh.png" width=60% height=60%>
 
+#### Vantagens do service mesh
+* Remoção do controle de tráfego da camada de serviço no Kubernetes por meio do sidecar proxy - permitindo mais elasticidade.
+* Controle de politicas, observability e muito mais
+
 [Referência](https://www.tetrate.io/blog/why-do-you-need-istio-when-you-already-have-kubernetes/)
+
 
 ### 📋 Pré-requisitos
 
