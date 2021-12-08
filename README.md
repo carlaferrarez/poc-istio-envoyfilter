@@ -54,14 +54,14 @@ Dar exemplos
 
 Explicar como executar os testes automatizados para este sistema.
 
+```
 kubectl delete deployment ratelimit
 kubectl delete deployment redis
-kubectl delete envoyfilter filter-local-ratelimit-svc -n istio-system
 kubectl delete envoyfilter filter-ratelimit -n istio-system
 kubectl delete envoyfilter filter-ratelimit-svc -n istio-system
 kubectl delete svc redis
 kubectl delete svc ratelimit
-
+```
 
 ---
 ⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
