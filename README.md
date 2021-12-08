@@ -43,14 +43,18 @@ Explicar como executar os testes automatizados para este sistema.
 
 ### 🔩 Analise testes de carga
 
-# Teste sem o header api-key
+#### Teste sem o header api-key
 ```
 Dar exemplos
 ```
-# Teste com o header api-key sem parâmetro limitador
-
-# Teste com o header api-key com parâmetro limitador
-
+#### Teste com o header api-key sem parâmetro limitador
+```
+Dar exemplos
+```
+#### Teste com o header api-key com parâmetro limitador
+```
+Dar exemplos
+```
 
 ## 📌 Limpando o ambiente 
 
@@ -65,7 +69,7 @@ kubectl delete svc redis
 kubectl delete svc ratelimit
 ```
 
-## 📌 Próximos passos
+## ✒️ Próximos passos
 
 Explicar como executar os testes automatizados para este sistema.
 
