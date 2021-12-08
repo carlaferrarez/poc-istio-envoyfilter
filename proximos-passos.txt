@@ -1,0 +1,4 @@
+- configuração de limitacao de tps > limitacao por excedente
+- quais serviços precisam precisam ser reinicializados: ratelimit service
+- se deixar sem o header, ele limita? linha 15 sim, limita pelo header
+- avaliar local rate limit posteriormente
