@@ -31,7 +31,7 @@ istioctl version
 ```
 kubectl get pods
 ```
-<img src="images/pods.png" width=60% height=60%>
+<img src="images/sample-app.png" width=60% height=60%>
 <img src="images/book-info.png" width=60% height=60%>
 
 
