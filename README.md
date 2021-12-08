@@ -2,7 +2,7 @@
 
 ## 🚀 Começando
 
-A experimentação foi feita utilizando o sistema operacional Linux
+A experimentação foi feita utilizando o sistema operacional Linux. O objetivo é utilizar o EnvoyFilter do Istio para habilitar a feature de limitação de tráfego. O Envoy suporta 2 tipos de limitação: local e global. As limitações locais são usadas para limitar as requisições por serviço (in-mesh traffic). Já a limitação global é utilizada para limitação pelo ingress gateway. Nessa POC será utilizada apenas a global, mas as duas poderiam ser utilizadas juntas. 
 
 ### 📋 Pré-requisitos
 
@@ -21,13 +21,24 @@ istioctl version
 
 ### 🔧 Desenvolvimento
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+COLOCAR IMAGEM
 
-Diga como essa etapa será:
+Executando os scripts para criação da infraestrutura:
 
 ```
-Dar exemplos
+kubectl apply -f config/config-map.yaml
 ```
+O ConfigMap será re
+No nosso caso poderia ser um arquivo editado pelos nossos consumidores.
+
+```
+kubectl apply -f config/rate-limit-svc.yaml
+```
+
+```
+kubectl apply -f config/envoy-filter.yaml
+```
+
 ##### Observação: ao alterar o ConfigMap, o serviço do ratelimit deve ser reiniciado. É uma limitação da feature. Existe uma solução paralela que pode ser utilizada, mas ainda não foi testada
 
 ```
@@ -69,7 +80,7 @@ kubectl delete svc ratelimit
 
 ## ✒️ Próximos passos
 
-Explicar como executar os testes automatizados para este sistema.
+Refinar a aplicabilidade de usar o local rate limit.
 
 ---
 ⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
