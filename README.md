@@ -43,12 +43,16 @@ Explicar como executar os testes automatizados para este sistema.
 
 ### 🔩 Analise testes de carga
 
-Explique que eles verificam esses testes e porquê.
-
+# Teste sem o header api-key
 ```
 Dar exemplos
 ```
-## 📌 Limpando o ambiente
+# Teste com o header api-key sem parâmetro limitador
+
+# Teste com o header api-key com parâmetro limitador
+
+
+## 📌 Limpando o ambiente 
 
 Explicar como executar os testes automatizados para este sistema.
 
@@ -60,6 +64,10 @@ kubectl delete envoyfilter filter-ratelimit-svc -n istio-system
 kubectl delete svc redis
 kubectl delete svc ratelimit
 ```
+
+## 📌 Próximos passos
+
+Explicar como executar os testes automatizados para este sistema.
 
 ---
 ⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
