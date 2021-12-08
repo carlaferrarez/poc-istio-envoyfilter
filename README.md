@@ -28,9 +28,22 @@ istioctl version
 ```
 <img src="images/istio.png" width=60% height=60%>
 
+* Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio](https://istio.io/latest/docs/setup/getting-started/)
+```
+istioctl version
+```
+<img src="images/istio.png" width=60% height=60%>
+
+* Deploy da aplicação padrão Bookinfo [Tutorial App](https://istio.io/latest/docs/examples/bookinfo/)
+```
+kubectl get pods
+```
+<img src="images/sample-app.png.png" width=60% height=60%>
+
+
 ### 🔧 Desenvolvimento
 
-COLOCAR IMAGEM
+COLOCAR IMAGEM ENVOY
 
 Executando os scripts para criação da infraestrutura:
 
