@@ -21,13 +21,6 @@ minikube start
 ```
 <img src="images/minikube.png" width=60% height=60%>
 
-
-* Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio](https://istio.io/latest/docs/setup/getting-started/)
-```
-istioctl version
-```
-<img src="images/istio.png" width=60% height=60%>
-
 * Instalação do Istio. Nesse tutorial foi utilizado a versão 1.11.4 [Tutorial Istio](https://istio.io/latest/docs/setup/getting-started/)
 ```
 istioctl version
@@ -39,6 +32,7 @@ istioctl version
 kubectl get pods
 ```
 <img src="images/pods.png" width=60% height=60%>
+<img src="images/book-info.png" width=60% height=60%>
 
 
 ### 🔧 Desenvolvimento
