@@ -58,6 +58,8 @@ spec:
                       address: ratelimit.default.svc.cluster.local
                       port_value: 8081
 
+---
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:
