@@ -48,7 +48,7 @@ Executando os scripts para criação da infraestrutura:
 ```
 kubectl apply -f config/config-map.yaml
 ```
-O ConfigMap será re
+
 No nosso caso poderia ser um arquivo editado pelos nossos consumidores.
 
 ```
