@@ -39,6 +39,10 @@ kubectl get pods
 
 <img src="https://user-images.githubusercontent.com/36728177/145292617-e713cbdd-10ef-4022-8c9f-19a7722dba03.png" width=60% height=60%>
 
+O serviço rate limit é um serviço Go / gRPC projetado para permitir cenários genéricos de limite de taxa de diferentes tipos de aplicativos. Os aplicativos solicitam uma decisão de limite de taxa com base em um domínio e um conjunto de descritores. O serviço lê a configuração do disco por meio do tempo de execução, compõe uma chave de cache e se comunica com o cache do Redis. A decisão é então devolvida ao chamador.
+
+[Referência](https://github.com/envoyproxy/ratelimit#configuration)
+
 Executando os scripts para criação da infraestrutura:
 
 ```
