@@ -73,17 +73,16 @@ Explicar como executar os testes automatizados para este sistema.
 ### 🔩 Analise testes de carga
 
 #### Teste sem o header api-key
-```
-Dar exemplos
-```
+
+<img src="images/5rps-noheader.png" width=80% height=80%>
+
 #### Teste com o header api-key sem parâmetro limitador
-```
-Dar exemplos
-```
+
+<img src="images/5rps.png" width=80% height=80%>
+
 #### Teste com o header api-key com parâmetro limitador
-```
-Dar exemplos
-```
+
+<img src="images/2rps.png" width=80% height=80%>
 
 ## 📌 Limpando o ambiente 
 
