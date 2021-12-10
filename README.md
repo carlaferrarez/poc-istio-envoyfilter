@@ -68,7 +68,7 @@ https://kubectl.docs.kubernetes.io/guides/config_management/secrets_configmaps/
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
+Testes de carga utilizando o K6, para validar a limitação de tráfego
 
 ### 🔩 Analise testes de carga
 
